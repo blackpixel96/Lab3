@@ -8,6 +8,12 @@ public class Client {
         this.name = name;
     }
 
+    public Order createOrder() {
+        Order order = new Order();
+        orders.add(order);
+        return order;
+    }
+
     void addItemToOder(Item item, Order order) {
         order.addItem(item);
     }
